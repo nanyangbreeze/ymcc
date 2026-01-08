@@ -1,0 +1,17 @@
+spring:
+  main:
+    allow-bean-definition-overriding: true  # 允许覆盖Bean定义
+  profiles:
+    active: dev  # 激活dev环境
+  application:
+    name: service-gateway  # 应用名称
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848  # Nacos注册中心地址
+      config:
+        server-addr: localhost:8848  # Nacos配置中心地址
+        file-extension: yaml  # 配置文件格式（yaml/yml）
+        prefix: application-gateway  # 配置文件前缀（默认是spring.application.name）
+        group: DEFAULT_GROUP  # 配置分组
+        namespace: c944d15e-40a2-4665-a681-16c693f70145  # Nacos命名空间ID

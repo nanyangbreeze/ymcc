@@ -1,0 +1,16 @@
+package cn.guoche.ymcc.mapper;
+
+import cn.guoche.ymcc.domain.Systemdictionaryitem;
+import com.baomidou.mybatisplus.mapper.BaseMapper;
+
+/**
+ * <p>
+ *  Mapper 接口
+ * </p>
+ *
+ * @author whale
+ * @since 2026-01-08
+ */
+public interface SystemdictionaryitemMapper extends BaseMapper<Systemdictionaryitem> {
+
+}
